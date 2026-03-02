@@ -17,7 +17,7 @@ class AlertLED {
   void reset(bool s);
 
 public:
-  AlertLED(int gpio,unsigned period_ms=1000);
+  AlertLED(int gpio,unsigned period_ms=500);  // Blink period change
   void alert();
   void cancel();
 
@@ -97,7 +97,7 @@ void AlertLED::callback(TimerHandle_t th) {
 //
 // Global objects
 //
-static AlertLED alert1(GPIO_LED,1000);
+static AlertLED alert1(GPIO_LED,500);  // Blink period change
 static unsigned loop_count = 0;
 
 //
