@@ -15,7 +15,7 @@ const int eastGreen   = 25;
 const int eastYellow  = 26;
 const int eastRed     = 27;
 
-// Don't have yet
+// Don't have LEDs yet
 const int walkLight   = 14;
 const int dontWalk    = 12;
 
